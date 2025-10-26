@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["ES2022", "DOM"],
+    "types": [
+      "node",
+      "@wdio/globals/types",
+      "expect-webdriverio",
+      "@wdio/cucumber-framework"
+    ],
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noImplicitAny": false,
+    "strict": false
+  },
+  "include": [
+    "features/**/*.feature",
+    "pageObjects/**/*.ts",
+    "contactTestData/**/*.ts",
+    "stepDefinitions/**/*.js",
+    "wdio.conf.js"
+, "pageObjects/homePage/homePage.actions.js", "contactTestData/contactData.js", "pageObjects/contactPage/contactPage.elements.js", "pageObjects/contactPage/contactPage.actions.js", "pageObjects/homePage/homePage.elements.js", "pageObjects/basePage.js"  ]
+}

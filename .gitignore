@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Allure Reports and Results
+allure-results/
+allure-report/
+*.allure/
+
+# Logs
+logs/
+*.log
+debug.log
+
+# Environment & System
+.env
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS-specific
+*.swp
+*.swo
+
+# Optional build/test artifacts
+coverage/
+reports/
+tmp/
