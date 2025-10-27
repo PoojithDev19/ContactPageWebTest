@@ -107,9 +107,12 @@ npx wdio run wdio.conf.js --spec ./features/contactPageValidation.feature
 npx wdio run wdio.conf.js --cucumberOpts.tagExpression "@tag"
 
 #### Note: 
-Tag is not added in the code
-In order to run above scenario specific, add your "@tag" above the scenario and differentiate accordingly
+Tag is not added in the code.
+
+In order to run above scenario specific, add your "@tag" above the scenario and differentiate accordingly.
+
 In our example, we have two scenarios, english and french url test, one can be @english and other can be @french, add them above respective scenarios.
+
 Also, modify the cucumberOpts Object's filter named tagExpression: '' to tagExpression: '@english or @french' in wdio.conf.js file.
 
 
