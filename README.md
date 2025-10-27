@@ -49,7 +49,7 @@ MedavieWebTest/
 
 ## Bug Details
 
-# URL Localization Bug:
+## URL Localization Bug:
 
 When accessing the French site at https://www.medavie.ca/fn/
 the language code in the URL is incorrect — it should be /fr/ instead of /fn/.
