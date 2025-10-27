@@ -47,6 +47,18 @@ MedavieWebTest/
 
 <img width="1535" height="663" alt="image" src="https://github.com/user-attachments/assets/37a52f3d-5ace-4e99-8873-d41a15023d8c" />
 
+## Bug Details
+
+# URL Localization Bug:
+
+When accessing the French site at https://www.medavie.ca/fn/
+the language code in the URL is incorrect — it should be /fr/ instead of /fn/.
+
+  - Expected: https://www.medavie.ca/fr/
+  
+  - Actual: https://www.medavie.ca/fn/
+
+
 
 ### Setup Instructions
 
