@@ -15,6 +15,7 @@ URL and content validation (Contact headers, regions, phone numbers)
 Configurable environment variables (e.g., `MEDAVIE_BASE_URL`)  
 Easy to extend for other Medavie web modules  
 
+
 ---
 
 ## Project Structure
@@ -43,6 +44,20 @@ MedavieWebTest/
 ├── package.json
 └── README.md
 
+
+## What the Tests Do
+
+Opens the English or French home page (URL from contactData.js).
+
+Click Contact (English) or Coordonnées (French).
+
+Handles hamburger menu automatically on small viewports.
+
+Assert the page title (Contact / Coordonnées).
+
+Validate contact details (numbers normalized to ignore spaces, (), and dashes).
+
+
 ## Test Results
 
 <img width="1535" height="663" alt="image" src="https://github.com/user-attachments/assets/37a52f3d-5ace-4e99-8873-d41a15023d8c" />
@@ -58,6 +73,17 @@ the language code in the URL is incorrect — it should be /fr/ instead of /fn/.
   
   - Actual: https://www.medavie.ca/fn/
 
+
+# Debugging Tips
+
+### Verbose logs
+
+npx wdio run wdio.conf.js --logLevel debug
+
+
+In code, you can pause and inspect:
+
+await browser.debug(); // REPL console
 
 
 # Setup Instructions
@@ -123,7 +149,7 @@ Also, modify the cucumberOpts Object's filter named tagExpression: '' to tagExpr
 | Issue | Cause | Solution |
 |--------|--------|----------|
 | `contactData is not defined` | Incorrect import path | Use `const { contactData } = require('../../contactTestData/contactData');` |
-| Navigation timeout | Chrome driver payload delay | Add `await browser.pause(3000)` or retry logic after `browser.url()` |
+| Navigation timeout | Chrome driver payload delay | Add `await browser.pause(3000)` or retry logic after `browser.url()` and make sure chrome browser version is upto date with no error |
 | Window not maximizing | Chrome headless restriction | Use `await browser.setWindowSize(1920, 1080);` |
 | TypeScript compilation errors | Cucumber/WDIO version mismatch | Converted project to pure JavaScript (`.js`) to ensure stability |
 | Package resolution errors | Legacy peer dependencies conflict | Used `--legacy-peer-deps` during install to bypass strict dependency validation |
