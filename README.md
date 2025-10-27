@@ -49,13 +49,13 @@ MedavieWebTest/
 
 Opens the English or French home page (URL from contactData.js).
 
-Click Contact (English) or Coordonnées (French).
-
 Handles hamburger menu automatically on small viewports.
+
+Clicks Contact (English) or Coordonnées (French).
 
 Assert the page title (Contact / Coordonnées).
 
-Validate contact details (numbers normalized to ignore spaces, (), and dashes).
+Validate contact details.
 
 
 ## Test Results
