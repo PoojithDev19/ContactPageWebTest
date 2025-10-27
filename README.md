@@ -60,7 +60,7 @@ the language code in the URL is incorrect — it should be /fr/ instead of /fn/.
 
 
 
-### Setup Instructions
+# Setup Instructions
 
 
 ##  Installation
