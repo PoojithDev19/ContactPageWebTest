@@ -190,7 +190,7 @@ Add automatic test retry mechanisms and intelligent failure recovery for improve
 
 Integrate Lighthouse CI or axe-core to validate accessibility and performance of key pages.
 
-## 6. Refactored English and French Tests into a Single Data-Driven Scenario
+## 6. Refactore English and French Tests into a Single Data-Driven Scenario
 
 Initially, the English and French contact page tests were written as two separate scenarios.
 
